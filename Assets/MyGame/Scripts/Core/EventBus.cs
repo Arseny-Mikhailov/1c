@@ -10,10 +10,7 @@ namespace MyGame.Scripts.Core
         public static void Subscribe<T>(Action<T> handler) where T : class
         {
             var type = typeof(T);
-            if (!Handlers.ContainsKey(type))
-            {
-                Handlers[type] = new List<Action<object>>();
-            }
+            if (!Handlers.ContainsKey(type)) Handlers[type] = new List<Action<object>>();
 
             Handlers[type].Add(obj => handler(obj as T));
         }
@@ -22,12 +19,8 @@ namespace MyGame.Scripts.Core
         {
             var type = typeof(T);
             if (Handlers.TryGetValue(type, out var handler1))
-            {
                 foreach (var handler in handler1)
-                {
                     handler(message);
-                }
-            }
         }
     }
 }

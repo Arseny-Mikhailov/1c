@@ -10,12 +10,12 @@ namespace MyGame.Scripts.Core
         [SerializeField] private TMP_Text titleText;
         [SerializeField] private TMP_Text scoreText;
         [SerializeField] private Button restartButton;
-    
+
         private void Awake()
         {
             restartButton.onClick.AddListener(OnRestartClicked);
         }
-    
+
         public void Show(bool isWin, int score)
         {
             panel.SetActive(true);
@@ -23,12 +23,12 @@ namespace MyGame.Scripts.Core
             scoreText.text = isWin ? $"Вы набрали: {score} очков!" : "";
             restartButton.gameObject.SetActive(true);
         }
-    
+
         public void Hide()
         {
             panel.SetActive(false);
         }
-    
+
         private void OnRestartClicked()
         {
             GameManager.Instance.RestartGame();

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3202ced504d48b6925b7cb908c92917, type: 3}
+  m_Name: Shape
+  m_EditorClassIdentifier: 
+  <SquarePrefab>k__BackingField: {fileID: 1473517759715564860, guid: 389bd51bff8efdb4ab552e4842fa84d4, type: 3}
+  <CirclePrefab>k__BackingField: {fileID: 1473517759715564860, guid: 8bd984a7ceb672046a397fe9fb6d2e5f, type: 3}
+  <TrianglePrefab>k__BackingField: {fileID: 1473517759715564860, guid: 390e0e39a143962459525019f808d548, type: 3}
+  <StarPrefab>k__BackingField: {fileID: 1473517759715564860, guid: 8ef426e54dd391d46bb32776e6661e25, type: 3}
+  <MinSpeed>k__BackingField: 5
+  <MaxSpeed>k__BackingField: 7
+  <SpawnIntervalMin>k__BackingField: 0.8
+  <SpawnIntervalMax>k__BackingField: 1.2
+  <InitialLives>k__BackingField: 3
+  <ShapesToWin>k__BackingField: 10

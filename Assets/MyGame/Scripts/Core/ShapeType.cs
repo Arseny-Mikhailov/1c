@@ -1,4 +1,10 @@
 namespace MyGame.Scripts.Core
 {
-    public enum ShapeType { Square, Circle, Triangle, Star }
+    public enum ShapeType
+    {
+        Square,
+        Circle,
+        Triangle,
+        Star
+    }
 }

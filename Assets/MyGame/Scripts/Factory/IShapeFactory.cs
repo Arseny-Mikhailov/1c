@@ -1,4 +1,4 @@
-namespace MyGame.Scripts.Core
+namespace MyGame.Scripts.Factory
 {
     public interface IShapeFactory
     {
